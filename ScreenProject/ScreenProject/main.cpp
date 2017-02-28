@@ -7,9 +7,15 @@
 //
 
 #include <iostream>
+#include "Screen.hpp"
+#include "Shape.hpp"
+#include "Line.hpp"
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-   // insert code here...
-   std::cout << "Hello, World!\n";
-    return 0;
+int main() {
+   Screen scr(10, 10);
+   Line ln(0, 0, 5, 5);
+   ln.draw(scr);
+   cout << scr;
+   return 0;
 }
